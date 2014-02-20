@@ -9,7 +9,9 @@
   <meta name="author" content="taopier">
 
   
-  <meta name="description" content=" Blog Archives Recent Posts ">
+  <meta name="description" content="spark 源码分析（一）：worker @ spark-core 主要就是在启动之前完成的准备工作，接收不同类型的消息进行相应的处理 preStart 创建自己的workDir
+在master上注册自己 尝试在所有的master上注册：发送消息类型为RegisterWorker
+如果没有成功， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +68,87 @@
       <div class="blog-index">
   
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/02/13/spark-source-code-worker/">Spark源码分析(一):worker</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-13T02:42:25+08:00" pubdate data-updated="true">Feb 13<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>spark 源码分析（一）：worker @ spark-core</h1>
+
+<h4>主要就是在启动之前完成的准备工作，接收不同类型的消息进行相应的处理</h4>
+
+<ul>
+<li>preStart
+
+<ul>
+<li>创建自己的workDir</li>
+<li>在master上注册自己
+
+<ul>
+<li>尝试在所有的master上注册：发送消息类型为RegisterWorker</li>
+<li>如果没有成功，即registered这个标志位仍然为初始的false，则一共试3次，如果某一次注册成功，完成，否则放弃</li>
+</ul>
+</li>
+<li>更新web ui页面（建立自己的metrics和相关链接)</li>
+</ul>
+</li>
+<li>receive 根据消息类型进行相应处理
+
+<ul>
+<li>master相关
+
+<ul>
+<li>RegisteredWorker：从master接收的消息类型，注册成功，则更新自己的masterUrl，schedule发送固定间隔的SendHeartbeat类型的消息给自己</li>
+<li>RegisterWorkerFailed：从master接收的消息类型，注册失败，直接退出</li>
+<li>SendHeartbeat：若自己与master是连接的，则发送自己的id的心跳给master，消息类型为Heartbeat</li>
+</ul>
+</li>
+<li>driver相关
+
+<ul>
+<li>Heartbeat： 接收到driver的心跳信息</li>
+</ul>
+</li>
+<li>executor相关
+
+<ul>
+<li>LaunchExecutor</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
@@ -77,6 +160,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/02/13/spark-source-code-worker/">Spark源码分析(一):worker</a>
+      </li>
     
   </ul>
 </section>
