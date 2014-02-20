@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Code | remember or forget]]></title>
-  <link href="http://www.taopier.com/blog/categories/code/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Code-digger | remember or forget]]></title>
+  <link href="http://www.taopier.com/blog/categories/code-digger/atom.xml" rel="self"/>
   <link href="http://www.taopier.com/"/>
-  <updated>2014-02-21T03:01:52+08:00</updated>
+  <updated>2014-02-21T03:03:25+08:00</updated>
   <id>http://www.taopier.com/</id>
   <author>
     <name><![CDATA[taopier]]></name>
