@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[remember or forget]]></title>
+  <link href="http://www.taopier.com/atom.xml" rel="self"/>
+  <link href="http://www.taopier.com/"/>
+  <updated>2014-02-20T12:05:47+08:00</updated>
+  <id>http://www.taopier.com/</id>
+  <author>
+    <name><![CDATA[taopier]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
