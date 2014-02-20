@@ -9,7 +9,7 @@
   <meta name="author" content="taopier">
 
   
-  <meta name="description" content="spark 源码分析（一）：worker @ spark-core 主要就是在启动之前完成的准备工作，接收不同类型的消息进行相应的处理 preStart 创建自己的workDir
+  <meta name="description" content="it lies in spark-core, 主要就是在启动之前完成的准备工作，接收不同类型的消息进行相应的处理 preStart 创建自己的workDir
 在master上注册自己 尝试在所有的master上注册：发送消息类型为RegisterWorker
 如果没有成功， &hellip;">
   
@@ -93,9 +93,7 @@
   </header>
 
 
-<div class="entry-content"><h1>spark 源码分析（一）：worker @ spark-core</h1>
-
-<h4>主要就是在启动之前完成的准备工作，接收不同类型的消息进行相应的处理</h4>
+<div class="entry-content"><h4>it lies in spark-core, 主要就是在启动之前完成的准备工作，接收不同类型的消息进行相应的处理</h4>
 
 <ul>
 <li>preStart
