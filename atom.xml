@@ -4,7 +4,7 @@
   <title><![CDATA[remember or forget]]></title>
   <link href="http://www.taopier.com/atom.xml" rel="self"/>
   <link href="http://www.taopier.com/"/>
-  <updated>2014-02-21T02:55:01+08:00</updated>
+  <updated>2014-02-21T03:01:52+08:00</updated>
   <id>http://www.taopier.com/</id>
   <author>
     <name><![CDATA[taopier]]></name>
@@ -19,6 +19,9 @@
     <updated>2014-02-13T02:42:25+08:00</updated>
     <id>http://www.taopier.com/blog/2014/02/13/spark-source-code-worker</id>
     <content type="html"><![CDATA[<h4>it lies in spark-core, 主要就是在启动之前完成的准备工作，接收不同类型的消息进行相应的处理</h4>
+
+<!-- more -->
+
 
 <ul>
 <li>preStart
