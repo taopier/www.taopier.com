@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Tag: spark | remember or forget]]></title>
-  <link href="http://www.taopier.com/tags/spark/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Spark | remember or forget]]></title>
+  <link href="http://www.taopier.com/blog/categories/spark/atom.xml" rel="self"/>
   <link href="http://www.taopier.com/"/>
-  <updated>2014-02-21T12:17:05+08:00</updated>
+  <updated>2014-02-21T12:44:13+08:00</updated>
   <id>http://www.taopier.com/</id>
   <author>
     <name><![CDATA[taopier]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[spark源码分析(一):worker]]></title>
+    <title type="html"><![CDATA[Spark源码分析(一):worker]]></title>
     <link href="http://www.taopier.com/blog/2014/02/13/spark-source-code-worker/"/>
     <updated>2014-02-13T02:42:25+08:00</updated>
     <id>http://www.taopier.com/blog/2014/02/13/spark-source-code-worker</id>
