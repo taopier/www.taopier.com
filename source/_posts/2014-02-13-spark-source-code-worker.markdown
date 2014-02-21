@@ -3,7 +3,7 @@ layout: post
 title: "spark源码分析(一):worker"
 date: 2014-02-13 02:42:25 +0800
 comments: true
-categories: code-digger
+categories: [code-digger, spark]
 ---
 ####it lies in spark-core, 主要就是在启动之前完成的准备工作，接收不同类型的消息进行相应的处理
 
