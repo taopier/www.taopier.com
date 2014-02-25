@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[remember or forget]]></title>
-  <link href="http://www.taopier.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Travel | remember or forget]]></title>
+  <link href="http://www.taopier.com/blog/categories/travel/atom.xml" rel="self"/>
   <link href="http://www.taopier.com/"/>
   <updated>2014-02-25T22:46:43+08:00</updated>
   <id>http://www.taopier.com/</id>
@@ -12,61 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Spark源码分析(一):worker]]></title>
-    <link href="http://www.taopier.com/blog/2014/02/13/spark-source-code-worker/"/>
-    <updated>2014-02-13T02:42:25+08:00</updated>
-    <id>http://www.taopier.com/blog/2014/02/13/spark-source-code-worker</id>
-    <content type="html"><![CDATA[<h4>it lies in spark-core, 主要就是在启动之前完成的准备工作，接收不同类型的消息进行相应的处理</h4>
-
-<!-- more -->
-
-
-<ul>
-<li>preStart
-
-<ul>
-<li>创建自己的workDir</li>
-<li>在master上注册自己
-
-<ul>
-<li>尝试在所有的master上注册：发送消息类型为RegisterWorker</li>
-<li>如果没有成功，即registered这个标志位仍然为初始的false，则一共试3次，如果某一次注册成功，完成，否则放弃</li>
-</ul>
-</li>
-<li>更新web ui页面（建立自己的metrics和相关链接)</li>
-</ul>
-</li>
-<li>receive 根据消息类型进行相应处理
-
-<ul>
-<li>master相关
-
-<ul>
-<li>RegisteredWorker：从master接收的消息类型，注册成功，则更新自己的masterUrl，schedule发送固定间隔的SendHeartbeat类型的消息给自己</li>
-<li>RegisterWorkerFailed：从master接收的消息类型，注册失败，直接退出</li>
-<li>SendHeartbeat：若自己与master是连接的，则发送自己的id的心跳给master，消息类型为Heartbeat</li>
-</ul>
-</li>
-<li>driver相关
-
-<ul>
-<li>Heartbeat： 接收到driver的心跳信息</li>
-</ul>
-</li>
-<li>executor相关
-
-<ul>
-<li>LaunchExecutor</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[台湾自由行 Day1]]></title>
