@@ -1,114 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[remember or forget]]></title>
-  <link href="http://www.taopier.com/atom.xml" rel="self"/>
-  <link href="http://www.taopier.com/"/>
-  <updated>2014-02-26T17:49:02+08:00</updated>
-  <id>http://www.taopier.com/</id>
-  <author>
-    <name><![CDATA[taopier]]></name>
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Backgroud Part I : Akka Actor - remember or forget</title>
+  <meta name="author" content="taopier">
+
+  
+  <meta name="description" content="Prepare Download akka : get Akka 2.1.0 (current stable release) for Scala 2.10 or Akka 2.0.5 (current stable release) for Scala 2.9 Actor Systems &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://www.taopier.com/blog/2013/01/26/akka-actor">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="remember or forget" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">remember or forget</a></h1>
+  
+    <h2>where im belonging to</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:www.taopier.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
     
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+      <h1 class="entry-title">Backgroud Part I : Akka Actor</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
 
   
-  <entry>
-    <title type="html"><![CDATA[Spark源码分析(一):worker]]></title>
-    <link href="http://www.taopier.com/blog/2014/02/13/spark-source-code-worker/"/>
-    <updated>2014-02-13T02:42:25+08:00</updated>
-    <id>http://www.taopier.com/blog/2014/02/13/spark-source-code-worker</id>
-    <content type="html"><![CDATA[<h4>it lies in spark-core, 主要就是在启动之前完成的准备工作，接收不同类型的消息进行相应的处理</h4>
-
-<!-- more -->
 
 
-<ul>
-<li>preStart
-
-<ul>
-<li>创建自己的workDir</li>
-<li>在master上注册自己
-
-<ul>
-<li>尝试在所有的master上注册：发送消息类型为RegisterWorker</li>
-<li>如果没有成功，即registered这个标志位仍然为初始的false，则一共试3次，如果某一次注册成功，完成，否则放弃</li>
-</ul>
-</li>
-<li>更新web ui页面（建立自己的metrics和相关链接)</li>
-</ul>
-</li>
-<li>receive 根据消息类型进行相应处理
-
-<ul>
-<li>master相关
-
-<ul>
-<li>RegisteredWorker：从master接收的消息类型，注册成功，则更新自己的masterUrl，schedule发送固定间隔的SendHeartbeat类型的消息给自己</li>
-<li>RegisterWorkerFailed：从master接收的消息类型，注册失败，直接退出</li>
-<li>SendHeartbeat：若自己与master是连接的，则发送自己的id的心跳给master，消息类型为Heartbeat</li>
-</ul>
-</li>
-<li>driver相关
-
-<ul>
-<li>Heartbeat： 接收到driver的心跳信息</li>
-</ul>
-</li>
-<li>executor相关
-
-<ul>
-<li>LaunchExecutor</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[台湾自由行 Day1]]></title>
-    <link href="http://www.taopier.com/blog/2013/05/10/travel-taiwan/"/>
-    <updated>2013-05-10T22:42:25+08:00</updated>
-    <id>http://www.taopier.com/blog/2013/05/10/travel-taiwan</id>
-    <content type="html"><![CDATA[<p>海航 北京-桃园-台北</p>
-
-<hr />
-
-<p>天气预报上看 未来一周台湾各地都是各种不同程度的雨，心想，这样也好，就下着雨逛各景点吧，起码天气不会太热，从大陆这边的天空上 还是蓝天白云 但是不知从何时起 就变成各种灰度的云层，本来还想亲眼俯视下跨越的台湾海峡，毕竟 这是鄙人第一次人肉翻墙，夹杂着儿时被灌输的“被台湾海峡分隔开的大陆和台湾，balabala”，总觉得人肉在海峡上空是件有着重大意义的事，但充溢着整个空间的各种云层，把肉眼可见海峡的概率 阻挡为0，带着这样的遗憾</p>
-
-<!-- more -->
+<time datetime="2013-01-26T17:33:11+08:00" pubdate data-updated="true">Jan 26<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
 
 
-<hr />
-
-<p>转折</p>
-
-<p>所谓有失有得，儿时还因为西游记的关系 对各种腾云驾雾有着非凡的情结，看惯了从下面仰视上面白云的角度，猜度着某个比较厚的云朵上就隐匿着某神仙的宫殿，一直盯着盯着，也许一瞬间，会有宫殿的踪迹出来。而当自己处在云层包围中时，又是另一番视角了，离得近的都是似雾一样的水汽，不识真面目，只缘此山中，看上面或者下面的云团 则因为有阳光的投射，光影效果特别的美，一副3D立体画，看到了一片略有起伏的云海上突兀出一柱马头，很有马头星云的艳影，或者突兀出三五从，每个点位都演绎着不同的光影之美，只恨自己摄影技术不佳，无法将这种美定格，只能印在脑海里，见过这种最天然的透射光影，起码，足矣</p>
-
-<hr />
-
-<p>转折</p>
-
-<p>到了桃园机场入境大厅，人也不少呀，但是第一感觉就是特别的静，人说话都收声敛气，周围入境的工作人员让我想起了李大仁和“代表月亮消灭你”的Maggie。声音一律是没有做作的嗲，会让你觉到全身酥麻，等办完入境，大厅里的其他工作人员给人的感觉基本上都是一致的，温文尔雅，热心有礼,这就是台湾的第一印象了，来自于当地的人文情怀（想起让人作呕的宣传语 “做文明有礼的xx人”，这边是浮在上面，那边是深入骨髓，这就是差异）</p>
-
-<p>从桃园到台北的大巴上（由于我误买的大有巴士，而非推荐的国光），沿途基本上在有人的地方穿行，速度没有后者快，但我觉得可以更深入的看到台北的非主市区的景致，更全面的看到一个城市的面貌，而非是刻意展示给外地人的部分，不得不说的是，一路上景致真的很美，各种青山绿水，应该是由于气候环境原因，那叫一个青翠欲滴，那叫一个各种浓度的绿，还有常见穿梭于山间或者平地的小河，养眼吧，只能说，中途还绕着原山饭店转了一圈，也算是所失所得了。但是由于从飞机准备降落和大巴沿途过的建筑物，真的无法让人相信这是一个所谓的大城市，绝大部分建筑看上去都那么破旧，和大陆这边一个不太发达的小县城有的一拼了。这算是第二印象吧</p>
-
-<hr />
-
-<p><img class="left" src="http://www.taopier.com/images/taiwan/day1.png" title="台北-宁夏夜市" >
-到了宾馆，冲澡，休息，睁眼已经晚上了，就逛到了宁夏夜市，享受第一晚的台湾美食</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Backgroud Part I : Akka Actor]]></title>
-    <link href="http://www.taopier.com/blog/2013/01/26/akka-actor/"/>
-    <updated>2013-01-26T17:33:11+08:00</updated>
-    <id>http://www.taopier.com/blog/2013/01/26/akka-actor</id>
-    <content type="html"><![CDATA[<h1>Prepare</h1>
+<div class="entry-content"><h1>Prepare</h1>
 
 <p><a href="http://akka.io/downloads/">Download akka</a> :</p>
 
@@ -210,7 +193,7 @@
 
 <h2>Actor References, Paths and Addresses</h2>
 
-<p><img src="http://www.taopier.com/images/code/entity-of-actor.png" title="entity of actor" ></p>
+<p><img src="/images/code/entity-of-actor.png" title="entity of actor" ></p>
 
 <p>The above image displays the relationship between the most important entities within an actor system, please read on for the details.</p>
 
@@ -287,7 +270,134 @@
 <p><a href="http://www.gtan.com/akka_doc/intro/getting-started-first-scala.html">http://www.gtan.com/akka_doc/intro/getting-started-first-scala.html</a></p>
 
 <p><a href="http://doc.akka.io/docs/akka/snapshot/">http://doc.akka.io/docs/akka/snapshot/</a></p>
-]]></content>
-  </entry>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
   
-</feed>
+
+<span class="byline author vcard">Posted by <span class="fn">taopier</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-26T17:33:11+08:00" pubdate data-updated="true">Jan 26<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/akka/'>akka</a>, <a class='category' href='/blog/categories/code-digger/'>code-digger</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+  
+      <!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1896040"></script>
+<!-- UY END -->
+
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/05/10/travel-taiwan/" title="Next Post: 台湾自由行 day1">台湾自由行 day1 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/02/13/spark-source-code-worker/">Spark源码分析(一):worker</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/10/travel-taiwan/">台湾自由行 Day1</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/26/akka-actor/">Backgroud Part I : Akka Actor</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+<section>
+  <h1>Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/akka/'>akka (1)</a></li>
+<li class='category'><a href='/blog/categories/code-digger/'>code-digger (2)</a></li>
+<li class='category'><a href='/blog/categories/journal/'>journal (1)</a></li>
+<li class='category'><a href='/blog/categories/spark/'>spark (1)</a></li>
+<li class='category'><a href='/blog/categories/taiwan/'>taiwan (1)</a></li>
+<li class='category'><a href='/blog/categories/travel/'>travel (1)</a></li>
+
+  </ul>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - taopier -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>
