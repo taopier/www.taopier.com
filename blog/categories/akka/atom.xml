@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Akka | remember or forget]]></title>
   <link href="http://www.taopier.com/blog/categories/akka/atom.xml" rel="self"/>
   <link href="http://www.taopier.com/"/>
-  <updated>2014-02-26T17:49:02+08:00</updated>
+  <updated>2014-02-26T17:50:08+08:00</updated>
   <id>http://www.taopier.com/</id>
   <author>
     <name><![CDATA[taopier]]></name>
@@ -18,15 +18,7 @@
     <link href="http://www.taopier.com/blog/2013/01/26/akka-actor/"/>
     <updated>2013-01-26T17:33:11+08:00</updated>
     <id>http://www.taopier.com/blog/2013/01/26/akka-actor</id>
-    <content type="html"><![CDATA[<h1>Prepare</h1>
-
-<p><a href="http://akka.io/downloads/">Download akka</a> :</p>
-
-<p>get Akka 2.1.0 (current stable release) for Scala 2.10</p>
-
-<p>or Akka 2.0.5 (current stable release) for Scala 2.9</p>
-
-<h1>Actor Systems</h1>
+    <content type="html"><![CDATA[<h1>Actor Systems</h1>
 
 <p>Hierarchical Structure: One actor, which is to oversee a certain function in the program might want to split up its task into smaller, more manageable pieces.</p>
 
