@@ -3,10 +3,10 @@ layout: post
 title: "backgroud part I : akka actor"
 date: 2013-01-26 17:33:11 +0800
 comments: true
-categories: akka code-digger
+categories: actor code-digger
 ---
 
-#Actor Systems
+#Actor Systems in akka
 
 Hierarchical Structure: One actor, which is to oversee a certain function in the program might want to split up its task into smaller, more manageable pieces.
 <!-- more -->
