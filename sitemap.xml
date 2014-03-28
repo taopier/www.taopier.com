@@ -2,26 +2,34 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://www.taopier.com/blog/2013/01/26/akka-actor/</loc>
-        <lastmod>2014-02-26T17:50:03+08:00</lastmod>
+        <lastmod>2014-02-26T19:06:19+09:00</lastmod>
     </url>
     <url>
         <loc>http://www.taopier.com/blog/2013/05/10/travel-taiwan/</loc>
-        <lastmod>2014-02-26T17:58:36+08:00</lastmod>
+        <lastmod>2014-02-26T18:58:36+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.taopier.com/blog/2014/02/10/actors-and-concurrency/</loc>
+        <lastmod>2014-02-26T19:05:11+09:00</lastmod>
     </url>
     <url>
         <loc>http://www.taopier.com/blog/2014/02/13/spark-source-code-worker/</loc>
-        <lastmod>2014-02-21T12:59:13+08:00</lastmod>
+        <lastmod>2014-02-21T13:59:13+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.taopier.com/blog/2014/03/28/japan-day1-tokyo/</loc>
+        <lastmod>2014-03-29T08:12:09+09:00</lastmod>
     </url>
     <url>
         <loc>http://www.taopier.com/blog/archives/</loc>
-        <lastmod>2014-02-26T17:58:36+08:00</lastmod>
+        <lastmod>2014-03-29T08:12:09+09:00</lastmod>
     </url>
     <url>
         <loc>http://www.taopier.com/</loc>
-        <lastmod>2014-02-26T17:58:36+08:00</lastmod>
+        <lastmod>2014-03-29T08:12:09+09:00</lastmod>
     </url>
     <url>
         <loc>http://www.taopier.com/robots.txt</loc>
-        <lastmod>2014-02-19T18:07:54+08:00</lastmod>
+        <lastmod>2014-02-19T19:07:54+09:00</lastmod>
     </url>
 </urlset>

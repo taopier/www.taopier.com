@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Code-digger | remember or forget]]></title>
   <link href="http://www.taopier.com/blog/categories/code-digger/atom.xml" rel="self"/>
   <link href="http://www.taopier.com/"/>
-  <updated>2014-02-26T17:58:48+08:00</updated>
+  <updated>2014-03-29T08:14:04+09:00</updated>
   <id>http://www.taopier.com/</id>
   <author>
     <name><![CDATA[taopier]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Spark源码分析(一):worker]]></title>
     <link href="http://www.taopier.com/blog/2014/02/13/spark-source-code-worker/"/>
-    <updated>2014-02-13T02:42:25+08:00</updated>
+    <updated>2014-02-13T03:42:25+09:00</updated>
     <id>http://www.taopier.com/blog/2014/02/13/spark-source-code-worker</id>
     <content type="html"><![CDATA[<h4>it lies in spark-core, 主要就是在启动之前完成的准备工作，接收不同类型的消息进行相应的处理</h4>
 
@@ -69,11 +69,20 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Actors and Concurrency]]></title>
+    <link href="http://www.taopier.com/blog/2014/02/10/actors-and-concurrency/"/>
+    <updated>2014-02-10T19:04:16+09:00</updated>
+    <id>http://www.taopier.com/blog/2014/02/10/actors-and-concurrency</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Backgroud Part I : Akka Actor]]></title>
     <link href="http://www.taopier.com/blog/2013/01/26/akka-actor/"/>
-    <updated>2013-01-26T17:33:11+08:00</updated>
+    <updated>2013-01-26T18:33:11+09:00</updated>
     <id>http://www.taopier.com/blog/2013/01/26/akka-actor</id>
-    <content type="html"><![CDATA[<h1>Actor Systems</h1>
+    <content type="html"><![CDATA[<h1>Actor Systems in akka</h1>
 
 <p>Hierarchical Structure: One actor, which is to oversee a certain function in the program might want to split up its task into smaller, more manageable pieces.</p>
 
