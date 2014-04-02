@@ -3,7 +3,7 @@ layout: post
 title: "霓虹 day1:东京"
 date: 2014-03-28 23:05:32 +0900
 comments: true
-categories: [travel, journal, taiwan]
+categories: [travel, journal, japan]
 ---
 ----------
 可能因为在帝都生活太久了 初到这里 就觉得哪儿哪儿都干净 在从机场到东京的路上，看到在主色调是蓝色和绿色的画板上渐次出现的小建筑群，熠熠闪烁着中国古风，周边地势略有些起伏，加上看起来高耸的植物群，倒像是一并簇拥着这些群落。心底就觉得这大抵就是和谐吧
